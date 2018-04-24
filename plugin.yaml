@@ -1,0 +1,5 @@
+name: "hello"
+version: "0.0.1"
+usage: "The Draft hello plugin"
+description: "The Draft hello repository plugin"
+command: "$DRAFT_PLUGIN_DIR/bin/hello"

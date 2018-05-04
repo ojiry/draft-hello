@@ -32,11 +32,11 @@ clean:
 	-rm bin/*
 	-rm -rf _dist/
 
-test:
-	go test github.com/ojiry/draft-hello/...
-
 release: build-cross
 release:
 	ghr -t $(GITHUB_TOKEN) -u ojiry -r draft-hello --replace v$(VERSION) dist/v$(VERSION)
 
-.PHONY: bootstrap build build-cross clean release
+test:
+	go test github.com/ojiry/draft-hello/...
+
+.PHONY: bootstrap build build-cross clean release test

@@ -20,6 +20,12 @@
   version = "v1.1.0"
 
 [[projects]]
+  branch = "master"
+  name = "k8s.io/apimachinery"
+  packages = ["pkg/version"]
+  revision = "13b73596e4b63e03203e86f6d9c7bcc1b937c62f"
+
+[[projects]]
   name = "k8s.io/helm"
   packages = [
     "pkg/proto/hapi/version",
@@ -28,9 +34,15 @@
   revision = "f6025bb9ee7daf9fee0026541c90a6f557a3e0bc"
   version = "v2.9.0"
 
+[[projects]]
+  name = "k8s.io/kubernetes"
+  packages = ["pkg/version"]
+  revision = "81753b10df112992bf51bbc2c2f85208aad78335"
+  version = "v1.10.2"
+
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "2338e654f2dd2cd4b461e3ed3d2e7c9dfe243e7bda124e6f5911469ea7702090"
+  inputs-digest = "26735a53e8147b338621186f4c48b62c0e90e85cf707c6026f0778e2c0861a32"
   solver-name = "gps-cdcl"
   solver-version = 1

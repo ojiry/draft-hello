@@ -7,9 +7,30 @@
   revision = "fdc29c553a45600ac4f795f3485d4bb9a80c7862"
   version = "v0.14.1"
 
+[[projects]]
+  name = "github.com/Masterminds/semver"
+  packages = ["."]
+  revision = "c7af12943936e8c39859482e61f0574c2fd7fc75"
+  version = "v1.4.2"
+
+[[projects]]
+  name = "github.com/golang/protobuf"
+  packages = ["proto"]
+  revision = "b4deda0973fb4c70b50d226b1af49f3da59f5265"
+  version = "v1.1.0"
+
+[[projects]]
+  name = "k8s.io/helm"
+  packages = [
+    "pkg/proto/hapi/version",
+    "pkg/version"
+  ]
+  revision = "f6025bb9ee7daf9fee0026541c90a6f557a3e0bc"
+  version = "v2.9.0"
+
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "5a57392a4f8699798f614462a68e7a1d741c4813691b721f204d2a5e85936f7c"
+  inputs-digest = "2338e654f2dd2cd4b461e3ed3d2e7c9dfe243e7bda124e6f5911469ea7702090"
   solver-name = "gps-cdcl"
   solver-version = 1

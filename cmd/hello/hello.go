@@ -3,11 +3,13 @@ package main
 import (
 	"fmt"
 
-	"github.com/Azure/draft/pkg/version"
+	draftVersion "github.com/Azure/draft/pkg/version"
+	helmVersion "k8s.io/helm/pkg/version"
 )
 
 func main() {
-	v := version.New()
+	v := draftVersion.New()
 	fmt.Println("Draft Hello!")
-	fmt.Printf("draft: %v", v.SemVer)
+	fmt.Printf("draft: %v\n", v.SemVer)
+	fmt.Printf("helm: %v\n", helmVersion.GetVersion())
 }
